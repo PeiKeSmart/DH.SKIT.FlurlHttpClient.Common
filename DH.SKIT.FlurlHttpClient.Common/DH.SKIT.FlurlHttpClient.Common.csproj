@@ -50,6 +50,7 @@
     </PackageReference>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Pek.Common" Version="3.91.2024.1024-beta0156" />
     <PackageReference Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
 
