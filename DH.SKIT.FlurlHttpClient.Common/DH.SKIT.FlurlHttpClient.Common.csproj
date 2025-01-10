@@ -51,7 +51,7 @@
     </PackageReference>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Pek.Common" Version="4.0.2025.106-beta0936" />
+    <PackageReference Include="Pek.Common" Version="4.0.2025.110-beta0306" />
     <PackageReference Include="System.Text.Json" Version="9.0.0" />
   </ItemGroup>
 
