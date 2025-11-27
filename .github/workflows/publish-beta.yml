@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
         - 'DH.SKIT.FlurlHttpClient.Common/**'
+        - 'DH.SKIT.FlurlHttpClient.Common/**'
   workflow_dispatch:
 
 jobs:
