@@ -22,11 +22,11 @@ jobs:
     - name: Restore
       run: |
         dotnet restore DH.SKIT.FlurlHttpClient.Common/DH.SKIT.FlurlHttpClient.Common.csproj
-        dotnet restore DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer.csproj
+        dotnet restore tools/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer.csproj
     - name: Build
       run: |
         dotnet pack --no-restore --version-suffix $(date "+%Y.%m%d") -c Release -o out DH.SKIT.FlurlHttpClient.Common/DH.SKIT.FlurlHttpClient.Common.csproj
-        dotnet pack --no-restore --version-suffix $(date "+%Y.%m%d-beta%H%M") -c Release -o out DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer.csproj
+        dotnet pack --no-restore --version-suffix $(date "+%Y.%m%d-beta%H%M") -c Release -o out tools/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer/DH.SKIT.FlurlHttpClient.Tools.CodeAnalyzer.csproj
     - name: Publish
       run: |
         dotnet nuget push ./out/*.nupkg --skip-duplicate --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.nugetKey }}
